@@ -18,7 +18,7 @@ const SocialLinks = ({ isDark = false }: Props) => {
           className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
           src={Twitter}
           alt="Twitter"
-          widht={20}
+          width={20}
           height={20}
         />
       </a>
@@ -27,7 +27,7 @@ const SocialLinks = ({ isDark = false }: Props) => {
           className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
           src={Facebook}
           alt="facebook"
-          widht={20}
+          width={20}
           height={20}
         />
       </a>
@@ -36,7 +36,7 @@ const SocialLinks = ({ isDark = false }: Props) => {
           className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
           src={Instagram}
           alt="instagram"
-          widht={20}
+          width={20}
           height={20}
         />
       </a>
@@ -45,7 +45,7 @@ const SocialLinks = ({ isDark = false }: Props) => {
           className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
           src={Discord}
           alt="discord"
-          widht={20}
+          width={20}
           height={20}
         />
       </a>
@@ -54,7 +54,7 @@ const SocialLinks = ({ isDark = false }: Props) => {
           className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
           src={Google}
           alt="google"
-          widht={20}
+          width={20}
           height={20}
         />
       </a>

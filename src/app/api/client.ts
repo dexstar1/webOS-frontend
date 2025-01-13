@@ -1,6 +1,4 @@
 import { PrismaClient } from '@prisma/client';
-// import { Configuration, OpenAIApi } from 'openai';
-import { OpenAI } from 'openai';
 
 let prismaInit: PrismaClient;
 
@@ -14,13 +12,3 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 export const prisma = prismaInit;
-
-// const configuration = new Configuration({
-//   apiKey: process.env.OPENAI_API_KEY,
-// });
-
-const client = new OpenAI({
-  apiKey: process.env['OPENAI_API_KEY'],
-});
-
-export const openai = new OpenAI(client);

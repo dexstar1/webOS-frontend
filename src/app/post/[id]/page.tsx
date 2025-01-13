@@ -4,9 +4,7 @@ import Sidebar from '../../(shared)/Sidebar';
 import { FormattedPost } from '../../../../types';
 
 type Props = {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 };
 
 const getPost = async (id: string) => {
@@ -35,7 +33,7 @@ export async function generateStaticParams() {
 }
 
 const Post = async ({ params }: Props) => {
-  const { id } = params;
+  const { id } = await params; // Await the params object to extract `id`
   console.log('id', id);
   const post: FormattedPost | null = await getPost(id);
 
